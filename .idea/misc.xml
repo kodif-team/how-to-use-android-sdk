@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_simple_using_kodif_compose_view.xml" value="0.1828125" />
+        <entry key="app/src/main/res/layout/activity_simple_using_kodif_fragment.xml" value="0.16875" />
       </map>
     </option>
   </component>
