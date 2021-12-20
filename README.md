@@ -16,6 +16,7 @@ val intent = Intent(this, KodifActivity::class.java)
 intent.putExtra("BASE_URL", "https://api.kodif.io")
 intent.putExtra("flowUuid", "yourFlowUuid")
 intent.putExtra("companyId", 0) //your companyId Id
+intent.putExtra("version", "your version")
 intent.putExtra("email", "yourEmail@email.com")
 startActivity(intent)
 ```
