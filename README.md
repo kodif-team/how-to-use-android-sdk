@@ -9,7 +9,7 @@ repositories {
     }
 ```
 3. Add `implementation 'io.kodif.android:kodif-android:1.0.4'` in module `build.gradle`
-4. Start KodifActivity and send your prams by intent
+4. Start KodifActivity and send your prams via intent
 
 ```
 val intent = Intent(this, KodifActivity::class.java)
