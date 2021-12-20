@@ -8,7 +8,7 @@ repositories {
         mavenCentral()
     }
 ```
-3. Add `implementation 'io.kodif.android:kodif-android:1.0.4'` in module `build.gradle`
+3. Add `implementation 'io.kodif.android:kodif-android:1.0.6'` in module `build.gradle`
 4. Start KodifActivity and send your prams via intent
 
 ```
