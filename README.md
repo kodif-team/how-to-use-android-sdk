@@ -8,14 +8,17 @@ repositories {
         mavenCentral()
     }
 ```
-3. Add `implementation 'io.kodif.android:kodif-android:1.0.6'` in module `build.gradle`
+3. Add `implementation 'io.kodif.android:kodif-android:1.0.7'` in module `build.gradle`
 4. Start KodifActivity and send your prams via intent
 
 ```
 val intent = Intent(this, KodifActivity::class.java)
-intent.putExtra("BASE_URL", "https://api.kodif.io")
+
 intent.putExtra("flowUuid", "yourFlowUuid")
-intent.putExtra("version", "your mobile release version")
-intent.putExtra("email", "yourEmail@email.com")
+
+val initialParams = hashMapOf<String,String>()
+initialParams["email"] = email //or user identifier specific to your flow
+intent.putExtra("initialParams", initialParams)
+
 startActivity(intent)
 ```
