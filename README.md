@@ -22,3 +22,41 @@ intent.putExtra("initialParams", initialParams)
 
 startActivity(intent)
 ```
+
+# Example of using callback
+
+To open another activity in the same app you can use “callback“ function:
+
+Examples:
+
+callback button in flow
+
+```
+{
+ "type": "button",
+ "variable": {
+   "value": "1",
+   "key": "submitInput", 
+ },
+ "data": {
+   "title": "Click Me", // button text
+ },
+  "action": {
+    "actionType": "callback",
+    "actionData": {
+        "key": "textField" // key of the view which the result will show in
+        "view": "MapView" // name of the view with you want to open
+    }
+  }
+}
+```
+to pass a data to Kodif SDK just put the data in intent extra
+
+```
+button.setOnClickListener {
+        intent.putExtra("value", "Central Park West, New York, NY 10024")
+        setResult(RESULT_OK, intent)
+        finish()
+}
+
+```
