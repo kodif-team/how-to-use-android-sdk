@@ -45,7 +45,7 @@ callback button in flow
     "actionType": "callback",
     "actionData": {
         "key": "textField" // key of the view which the result will show in
-        "view": "MapView" // name of the view with you want to open
+        "view": "com.eample.MapActivity" // the name of Activity with package name wich you want to open
     }
   }
 }
