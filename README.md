@@ -50,7 +50,7 @@ callback button in flow
   }
 }
 ```
-to pass a data to Kodif SDK just put the data in intent extra
+to pass a data to Kodif SDK just put the data in the intent extra
 
 ```
 button.setOnClickListener {
